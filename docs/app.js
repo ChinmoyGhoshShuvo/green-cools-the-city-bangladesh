@@ -8,10 +8,15 @@
   // ---------------------------------------------------------------- constants
   const BD_BOUNDS = [[20.55, 87.9], [26.75, 92.75]];
   const TILE = {
-    streets: L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-      subdomains: "abcd", maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    }),
+    streets: L.layerGroup([
+      L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
+        maxNativeZoom: 16, maxZoom: 19,
+        attribution: "Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors",
+      }),
+      L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {
+        maxNativeZoom: 16, maxZoom: 19,
+      }),
+    ]),
     satellite: L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
       maxZoom: 19, attribution: "Imagery &copy; Esri, Maxar, Earthstar Geographics",
     }),

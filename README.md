@@ -90,7 +90,7 @@ The 95 two-band GeoTIFFs (NDVI and LST, about 100 MB in total) are not included.
 
 ## Tools
 
-Python (GDAL, rasterio, NumPy, pandas, matplotlib, Plotly, imageio) · Microsoft Planetary Computer STAC API · QGIS · JavaScript with Leaflet (web map; CARTO and Esri basemaps) · GitHub Pages
+Python (GDAL, rasterio, NumPy, pandas, matplotlib, Plotly, imageio) · Microsoft Planetary Computer STAC API · QGIS · JavaScript with Leaflet (web map; Esri basemaps) · GitHub Pages
 
 ## Contact
 
