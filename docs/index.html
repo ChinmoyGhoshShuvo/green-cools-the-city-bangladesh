@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Green Cools the City · Bangladesh</title>
+<meta name="description" content="Interactive map of vegetation (NDVI) and land surface temperature in 8 Bangladeshi cities, Landsat 8/9, 2014–2025.">
+<meta property="og:title" content="Green Cools the City · Bangladesh">
+<meta property="og:description" content="Swipe between greenness and heat, pixel by pixel, in 8 Bangladeshi cities from 2014 to 2025.">
+<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <h1>Green cools the city</h1>
+    <p>Vegetation and surface heat in 8 Bangladeshi cities · Landsat 8/9 · 2014–2025</p>
+  </div>
+  <nav class="toplinks">
+    <a href="https://github.com/ChinmoyGhoshShuvo/green-cools-the-city-bangladesh" target="_blank" rel="noopener">Method &amp; code on GitHub</a>
+  </nav>
+</header>
+
+<main class="layout">
+  <section class="mapwrap" aria-label="Map">
+    <div id="map"></div>
+
+    <div class="crumbs" id="crumbs">
+      <button id="backBtn" class="crumb-btn" hidden>&larr; Bangladesh</button>
+      <span id="crumbTitle">Bangladesh · choose a city</span>
+    </div>
+
+    <div class="basemap-switch" role="group" aria-label="Basemap">
+      <button data-base="streets" class="chip on" aria-pressed="true">Streets</button>
+      <button data-base="satellite" class="chip" aria-pressed="false">Satellite</button>
+    </div>
+
+    <div id="divider" class="divider" hidden>
+      <div class="divider-line"></div>
+      <div class="divider-handle" tabindex="0" role="slider" aria-label="Swipe between greenness and heat" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <span>&#9664;</span><span>&#9654;</span>
+      </div>
+      <div class="side-tag left">Greenness (NDVI)</div>
+      <div class="side-tag right" id="heatTag">Relative heat</div>
+    </div>
+
+    <div id="hoverTip" class="hover-tip" hidden></div>
+    <div id="mapNote" class="map-note" hidden></div>
+
+    <div class="timeline">
+      <button id="playBtn" class="play" aria-label="Play through the years">&#9654;</button>
+      <div class="slider-wrap">
+        <input id="yearSlider" type="range" min="0" max="11" step="1" value="11" aria-label="Year">
+        <div id="yearTicks" class="ticks"></div>
+      </div>
+      <div id="yearLabel" class="year-label">2025</div>
+    </div>
+  </section>
+
+  <aside class="panel" id="panel">
+    <!-- Overview panel -->
+    <div id="overviewPanel">
+      <h2>How much cooler is greener ground?</h2>
+      <p class="lede">For each city and year, every 30&nbsp;m pixel's greenness (NDVI) was compared with its surface temperature on one clear pre-monsoon Landsat day. The number is the fitted change in surface temperature for each <b>+0.1 NDVI</b>.</p>
+      <div class="list-head"><span id="listYear">2025</span><span>°C per +0.1 NDVI</span></div>
+      <ol id="cityList" class="city-list"></ol>
+      <div class="legend-inline">
+        <span>weaker cooling</span><div class="ramp ramp-cool"></div><span>stronger</span>
+      </div>
+      <p class="hint">Click a city on the map or in the list to open its pixel map.</p>
+    </div>
+
+    <!-- City panel -->
+    <div id="cityPanel" hidden>
+      <div class="city-head">
+        <h2 id="cityName">City</h2>
+        <div id="sceneLine" class="muted"></div>
+      </div>
+
+      <div class="tiles">
+        <div class="tile"><div class="tile-v" id="tSlope">–</div><div class="tile-k">°C per +0.1 NDVI</div></div>
+        <div class="tile"><div class="tile-v" id="tR">–</div><div class="tile-k">correlation r</div></div>
+        <div class="tile"><div class="tile-v" id="tMean">–</div><div class="tile-k">city mean LST</div></div>
+      </div>
+
+      <div class="row-controls">
+        <div class="seg" role="group" aria-label="Temperature display">
+          <button data-mode="rel" class="seg-btn on" aria-pressed="true">Relative heat</button>
+          <button data-mode="abs" class="seg-btn" aria-pressed="false">Actual °C</button>
+        </div>
+        <label class="opacity">Layer <input id="opacity" type="range" min="0.2" max="1" step="0.05" value="0.85" aria-label="Layer opacity"></label>
+      </div>
+
+      <div class="scatter-block">
+        <div class="scatter-title">Every land pixel · <span class="muted">drag a box to find those pixels on the map</span></div>
+        <canvas id="scatter" aria-label="Scatter of NDVI against temperature for all land pixels"></canvas>
+        <div class="presets">
+          <button class="chip" data-preset="hot">Hot &amp; barely green</button>
+          <button class="chip" data-preset="cool">Cool &amp; green</button>
+          <button class="chip" data-preset="clear">Clear selection</button>
+        </div>
+        <div id="selInfo" class="sel-info muted">No selection. The orange line is the fitted trend.</div>
+      </div>
+
+      <div id="hoverInfo" class="hover-info muted">Point at the map to read a pixel.</div>
+
+      <div class="legends">
+        <div class="legend"><div class="legend-k">Greenness (NDVI)</div><div class="ramp ramp-ndvi"></div><div class="legend-ticks"><span>0</span><span>0.2</span><span>0.4</span><span>0.6</span><span>0.8</span></div></div>
+        <div class="legend"><div class="legend-k" id="heatLegendK">Relative heat (°C vs city average that day)</div><div class="ramp" id="heatRamp"></div><div class="legend-ticks" id="heatTicks"></div></div>
+      </div>
+    </div>
+
+    <details class="about">
+      <summary>About this map</summary>
+      <p>Data: USGS Landsat 8/9 Collection 2 Level-2 surface reflectance and surface temperature, via the Microsoft Planetary Computer. One scene per city-year (22 Feb to 8 May), chosen as the clearest scene closest to early April. Clouds, cloud shadows and water are masked. Each city is a fixed window of about 12 × 13 km around its core.</p>
+      <p><b>Relative heat</b> is a pixel's temperature minus the city's mean land temperature that day, so years with hotter or cooler weather can be compared fairly. <b>Actual °C</b> is the raw land surface temperature, which is the temperature of roofs, roads and fields, not of the air.</p>
+      <p>The trend line and the numbers in the tiles come from the full analysis. In this map, water is approximated as pixels with NDVI ≤ 0. The relationship is a correlation: greener pixels also tend to be less built-up.</p>
+      <p>Sylhet 2016 had no cloud-free scene. Built by Chinmoy Ghosh Shuvo, 2026.</p>
+    </details>
+  </aside>
+</main>
+
+<script src="lib/leaflet/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
