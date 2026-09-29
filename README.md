@@ -76,7 +76,7 @@ Sylhet 2016 has no usable scene, which leaves 95 of the 96 city-years.
 - **City differences:** Rajshahi shows the steepest cooling and Mymensingh the most consistent fits (median r −0.74). Chattogram, Dhaka and Khulna have the gentlest slopes and the weakest correlations (median r −0.51 to −0.55).
 - **Year-to-year variation** in each city is large, because each year uses a single scene with its own weather and date.
 
-**Caveats:** the relationship is a correlation, not a measured cause, because NDVI also tracks building density and nearness to water. Each city-year is one scene, so mean LST is not comparable between years or cities; only the slopes are. A few scenes are only 60% clear (Chattogram 2019, Sylhet 2019 and 2020), and Sylhet 2018–2019 give weak fits (r ≈ −0.15 to −0.17). LST is the temperature of the ground surface, not the air. In the interactive map, water is approximated as pixels with NDVI ≤ 0 (the analysis used the Landsat QA water flag), so its pixel counts differ slightly from the analysis; the trend lines and numbers shown come from the analysis.
+**Caveats:** the relationship is a correlation, not a measured causation, because NDVI also tracks building density and nearness to water. Each city-year is one scene, so mean LST is not comparable between years or cities; only the slopes are. A few scenes are only 60% clear (Chattogram 2019, Sylhet 2019 and 2020), and Sylhet 2018–2019 give weak fits (r ≈ −0.15 to −0.17). LST is the temperature of the ground surface, not the air. In the interactive map, water is approximated as pixels with NDVI ≤ 0 (the analysis used the Landsat QA water flag), so its pixel counts differ slightly from the analysis; the trend lines and numbers shown come from the analysis.
 
 ## Code
 
