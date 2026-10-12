@@ -1,0 +1,1378 @@
+{
+ "encoding": {
+  "ndvi": [
+   -0.2,
+   1.0
+  ],
+  "lst": [
+   15.0,
+   65.0
+  ],
+  "levels": 254,
+  "note": "value = lo + (byte - 1) / 254 * (hi - lo); byte 0 = no data. File = NDVI bytes then LST bytes, row-major, north-up."
+ },
+ "years": [
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "cities": {
+  "Dhaka": {
+   "lon": 90.4125,
+   "lat": 23.78,
+   "width": 408,
+   "height": 446,
+   "bounds": [
+    [
+     23.719999999999988,
+     90.35249999999998
+    ],
+    [
+     23.840194464539614,
+     90.47265488316481
+    ]
+   ],
+   "merc": [
+    10057994.291899249,
+    2719325.819558568,
+    10071369.872309482,
+    2733947.164810931
+   ],
+   "median_slope": -8.784,
+   "median_r": -0.519,
+   "years": {
+    "2014": {
+     "file": "grid/Dhaka_2014.bin.gz",
+     "date": "2014-03-30",
+     "scene": "LC08_L2SP_137044_20140330_02_T1",
+     "clear": 1.0,
+     "n": 185282,
+     "ndvi_mean": 0.3279,
+     "lst_mean": 41.971,
+     "slope": -12.6,
+     "intercept": 46.102,
+     "r": -0.6375
+    },
+    "2015": {
+     "file": "grid/Dhaka_2015.bin.gz",
+     "date": "2015-03-17",
+     "scene": "LC08_L2SP_137043_20150317_02_T1",
+     "clear": 0.997,
+     "n": 184572,
+     "ndvi_mean": 0.3115,
+     "lst_mean": 36.417,
+     "slope": -11.255,
+     "intercept": 39.923,
+     "r": -0.5837
+    },
+    "2016": {
+     "file": "grid/Dhaka_2016.bin.gz",
+     "date": "2016-03-03",
+     "scene": "LC08_L2SP_137043_20160303_02_T1",
+     "clear": 0.998,
+     "n": 186700,
+     "ndvi_mean": 0.2768,
+     "lst_mean": 33.594,
+     "slope": -7.47,
+     "intercept": 35.662,
+     "r": -0.5088
+    },
+    "2017": {
+     "file": "grid/Dhaka_2017.bin.gz",
+     "date": "2017-03-22",
+     "scene": "LC08_L2SP_137043_20170322_02_T1",
+     "clear": 0.934,
+     "n": 176071,
+     "ndvi_mean": 0.3029,
+     "lst_mean": 30.162,
+     "slope": -5.13,
+     "intercept": 31.716,
+     "r": -0.4342
+    },
+    "2018": {
+     "file": "grid/Dhaka_2018.bin.gz",
+     "date": "2018-03-09",
+     "scene": "LC08_L2SP_137043_20180309_02_T1",
+     "clear": 0.963,
+     "n": 178739,
+     "ndvi_mean": 0.284,
+     "lst_mean": 33.667,
+     "slope": -7.322,
+     "intercept": 35.747,
+     "r": -0.4696
+    },
+    "2019": {
+     "file": "grid/Dhaka_2019.bin.gz",
+     "date": "2019-03-28",
+     "scene": "LC08_L2SP_137044_20190328_02_T1",
+     "clear": 1.0,
+     "n": 186762,
+     "ndvi_mean": 0.3348,
+     "lst_mean": 37.425,
+     "slope": -8.681,
+     "intercept": 40.331,
+     "r": -0.5756
+    },
+    "2020": {
+     "file": "grid/Dhaka_2020.bin.gz",
+     "date": "2020-03-30",
+     "scene": "LC08_L2SP_137044_20200330_02_T1",
+     "clear": 0.981,
+     "n": 181846,
+     "ndvi_mean": 0.3184,
+     "lst_mean": 42.021,
+     "slope": -10.547,
+     "intercept": 45.379,
+     "r": -0.5165
+    },
+    "2021": {
+     "file": "grid/Dhaka_2021.bin.gz",
+     "date": "2021-03-17",
+     "scene": "LC08_L2SP_137044_20210317_02_T1",
+     "clear": 1.0,
+     "n": 187416,
+     "ndvi_mean": 0.2614,
+     "lst_mean": 37.123,
+     "slope": -8.887,
+     "intercept": 39.446,
+     "r": -0.5049
+    },
+    "2022": {
+     "file": "grid/Dhaka_2022.bin.gz",
+     "date": "2022-03-20",
+     "scene": "LC08_L2SP_137044_20220320_02_T1",
+     "clear": 1.0,
+     "n": 185704,
+     "ndvi_mean": 0.2806,
+     "lst_mean": 37.446,
+     "slope": -9.157,
+     "intercept": 40.015,
+     "r": -0.5318
+    },
+    "2023": {
+     "file": "grid/Dhaka_2023.bin.gz",
+     "date": "2023-04-08",
+     "scene": "LC08_L2SP_137044_20230408_02_T1",
+     "clear": 1.0,
+     "n": 186525,
+     "ndvi_mean": 0.3186,
+     "lst_mean": 40.806,
+     "slope": -10.044,
+     "intercept": 44.005,
+     "r": -0.5803
+    },
+    "2024": {
+     "file": "grid/Dhaka_2024.bin.gz",
+     "date": "2024-04-26",
+     "scene": "LC08_L2SP_137044_20240426_02_T1",
+     "clear": 1.0,
+     "n": 186689,
+     "ndvi_mean": 0.3271,
+     "lst_mean": 40.208,
+     "slope": -8.188,
+     "intercept": 42.886,
+     "r": -0.5219
+    },
+    "2025": {
+     "file": "grid/Dhaka_2025.bin.gz",
+     "date": "2025-03-28",
+     "scene": "LC08_L2SP_137044_20250328_02_T1",
+     "clear": 1.0,
+     "n": 186313,
+     "ndvi_mean": 0.283,
+     "lst_mean": 39.444,
+     "slope": -8.459,
+     "intercept": 41.838,
+     "r": -0.495
+    }
+   }
+  },
+  "Chattogram": {
+   "lon": 91.82,
+   "lat": 22.345,
+   "width": 412,
+   "height": 446,
+   "bounds": [
+    [
+     22.28499999999999,
+     91.75999999999998
+    ],
+    [
+     22.40519447168244,
+     91.88004584228308
+    ]
+   ],
+   "merc": [
+    10214676.475190781,
+    2545777.458527691,
+    10228039.917225584,
+    2560243.708885756
+   ],
+   "median_slope": -7.613,
+   "median_r": -0.508,
+   "years": {
+    "2014": {
+     "file": "grid/Chattogram_2014.bin.gz",
+     "date": "2014-04-24",
+     "scene": "LC08_L2SP_136045_20140424_02_T1",
+     "clear": 0.976,
+     "n": 166839,
+     "ndvi_mean": 0.3711,
+     "lst_mean": 41.905,
+     "slope": -9.207,
+     "intercept": 45.322,
+     "r": -0.4951
+    },
+    "2015": {
+     "file": "grid/Chattogram_2015.bin.gz",
+     "date": "2015-03-26",
+     "scene": "LC08_L2SP_136045_20150326_02_T1",
+     "clear": 0.996,
+     "n": 176360,
+     "ndvi_mean": 0.3676,
+     "lst_mean": 35.198,
+     "slope": -6.11,
+     "intercept": 37.444,
+     "r": -0.3881
+    },
+    "2016": {
+     "file": "grid/Chattogram_2016.bin.gz",
+     "date": "2016-04-29",
+     "scene": "LC08_L2SP_136044_20160429_02_T1",
+     "clear": 0.814,
+     "n": 144550,
+     "ndvi_mean": 0.4352,
+     "lst_mean": 40.254,
+     "slope": -5.511,
+     "intercept": 42.653,
+     "r": -0.4133
+    },
+    "2017": {
+     "file": "grid/Chattogram_2017.bin.gz",
+     "date": "2017-03-15",
+     "scene": "LC08_L2SP_136045_20170315_02_T1",
+     "clear": 0.991,
+     "n": 171768,
+     "ndvi_mean": 0.4266,
+     "lst_mean": 32.908,
+     "slope": -6.64,
+     "intercept": 35.74,
+     "r": -0.5541
+    },
+    "2018": {
+     "file": "grid/Chattogram_2018.bin.gz",
+     "date": "2018-04-03",
+     "scene": "LC08_L2SP_136045_20180403_02_T1",
+     "clear": 1.0,
+     "n": 175226,
+     "ndvi_mean": 0.3678,
+     "lst_mean": 39.768,
+     "slope": -7.546,
+     "intercept": 42.544,
+     "r": -0.4482
+    },
+    "2019": {
+     "file": "grid/Chattogram_2019.bin.gz",
+     "date": "2019-04-22",
+     "scene": "LC08_L2SP_136045_20190422_02_T1",
+     "clear": 0.596,
+     "n": 101622,
+     "ndvi_mean": 0.4611,
+     "lst_mean": 40.073,
+     "slope": -9.285,
+     "intercept": 44.355,
+     "r": -0.4587
+    },
+    "2020": {
+     "file": "grid/Chattogram_2020.bin.gz",
+     "date": "2020-03-23",
+     "scene": "LC08_L2SP_136045_20200323_02_T1",
+     "clear": 0.939,
+     "n": 161150,
+     "ndvi_mean": 0.377,
+     "lst_mean": 37.389,
+     "slope": -7.927,
+     "intercept": 40.377,
+     "r": -0.5204
+    },
+    "2021": {
+     "file": "grid/Chattogram_2021.bin.gz",
+     "date": "2021-02-22",
+     "scene": "LC08_L2SP_136045_20210222_02_T1",
+     "clear": 1.0,
+     "n": 171118,
+     "ndvi_mean": 0.3419,
+     "lst_mean": 33.166,
+     "slope": -7.68,
+     "intercept": 35.792,
+     "r": -0.574
+    },
+    "2022": {
+     "file": "grid/Chattogram_2022.bin.gz",
+     "date": "2022-03-21",
+     "scene": "LC09_L2SP_136044_20220321_02_T1",
+     "clear": 1.0,
+     "n": 172943,
+     "ndvi_mean": 0.3832,
+     "lst_mean": 38.394,
+     "slope": -7.543,
+     "intercept": 41.284,
+     "r": -0.5225
+    },
+    "2023": {
+     "file": "grid/Chattogram_2023.bin.gz",
+     "date": "2023-04-09",
+     "scene": "LC09_L2SP_136045_20230409_02_T1",
+     "clear": 0.999,
+     "n": 174166,
+     "ndvi_mean": 0.4051,
+     "lst_mean": 40.894,
+     "slope": -9.694,
+     "intercept": 44.821,
+     "r": -0.5794
+    },
+    "2024": {
+     "file": "grid/Chattogram_2024.bin.gz",
+     "date": "2024-03-18",
+     "scene": "LC08_L2SP_136045_20240318_02_T1",
+     "clear": 0.981,
+     "n": 171199,
+     "ndvi_mean": 0.3811,
+     "lst_mean": 38.246,
+     "slope": -8.24,
+     "intercept": 41.387,
+     "r": -0.5438
+    },
+    "2025": {
+     "file": "grid/Chattogram_2025.bin.gz",
+     "date": "2025-03-29",
+     "scene": "LC09_L2SP_136045_20250329_02_T1",
+     "clear": 0.872,
+     "n": 153754,
+     "ndvi_mean": 0.3307,
+     "lst_mean": 34.593,
+     "slope": -4.895,
+     "intercept": 36.212,
+     "r": -0.3353
+    }
+   }
+  },
+  "Khulna": {
+   "lon": 89.55,
+   "lat": 22.83,
+   "width": 411,
+   "height": 446,
+   "bounds": [
+    [
+     22.769999999999996,
+     89.48999999999998
+    ],
+    [
+     22.890194469293824,
+     89.61017691969374
+    ]
+   ],
+   "merc": [
+    9961981.23109005,
+    2604227.624198168,
+    9975359.264595464,
+    2618744.9062989336
+   ],
+   "median_slope": -8.723,
+   "median_r": -0.549,
+   "years": {
+    "2014": {
+     "file": "grid/Khulna_2014.bin.gz",
+     "date": "2014-04-22",
+     "scene": "LC08_L2SP_138044_20140422_02_T1",
+     "clear": 1.0,
+     "n": 183770,
+     "ndvi_mean": 0.4367,
+     "lst_mean": 42.088,
+     "slope": -9.342,
+     "intercept": 46.168,
+     "r": -0.4222
+    },
+    "2015": {
+     "file": "grid/Khulna_2015.bin.gz",
+     "date": "2015-03-24",
+     "scene": "LC08_L2SP_138044_20150324_02_T1",
+     "clear": 0.989,
+     "n": 186440,
+     "ndvi_mean": 0.5086,
+     "lst_mean": 34.522,
+     "slope": -8.824,
+     "intercept": 39.01,
+     "r": -0.5634
+    },
+    "2016": {
+     "file": "grid/Khulna_2016.bin.gz",
+     "date": "2016-04-11",
+     "scene": "LC08_L2SP_138044_20160411_02_T1",
+     "clear": 0.996,
+     "n": 187980,
+     "ndvi_mean": 0.4973,
+     "lst_mean": 38.242,
+     "slope": -5.142,
+     "intercept": 40.799,
+     "r": -0.3256
+    },
+    "2017": {
+     "file": "grid/Khulna_2017.bin.gz",
+     "date": "2017-04-14",
+     "scene": "LC08_L2SP_138044_20170414_02_T1",
+     "clear": 1.0,
+     "n": 188806,
+     "ndvi_mean": 0.4845,
+     "lst_mean": 37.899,
+     "slope": -8.264,
+     "intercept": 41.903,
+     "r": -0.4541
+    },
+    "2018": {
+     "file": "grid/Khulna_2018.bin.gz",
+     "date": "2018-03-25",
+     "scene": "LC08_L2SP_137044_20180325_02_T1",
+     "clear": 0.996,
+     "n": 190692,
+     "ndvi_mean": 0.4941,
+     "lst_mean": 36.249,
+     "slope": -9.034,
+     "intercept": 40.712,
+     "r": -0.5352
+    },
+    "2019": {
+     "file": "grid/Khulna_2019.bin.gz",
+     "date": "2019-03-28",
+     "scene": "LC08_L2SP_137044_20190328_02_T1",
+     "clear": 1.0,
+     "n": 186299,
+     "ndvi_mean": 0.5497,
+     "lst_mean": 34.598,
+     "slope": -10.185,
+     "intercept": 40.196,
+     "r": -0.6897
+    },
+    "2020": {
+     "file": "grid/Khulna_2020.bin.gz",
+     "date": "2020-04-06",
+     "scene": "LC08_L2SP_138044_20200406_02_T1",
+     "clear": 1.0,
+     "n": 183948,
+     "ndvi_mean": 0.5198,
+     "lst_mean": 36.802,
+     "slope": -8.386,
+     "intercept": 41.161,
+     "r": -0.6188
+    },
+    "2021": {
+     "file": "grid/Khulna_2021.bin.gz",
+     "date": "2021-03-17",
+     "scene": "LC08_L2SP_137044_20210317_02_T1",
+     "clear": 1.0,
+     "n": 189926,
+     "ndvi_mean": 0.4624,
+     "lst_mean": 33.925,
+     "slope": -10.435,
+     "intercept": 38.751,
+     "r": -0.6427
+    },
+    "2022": {
+     "file": "grid/Khulna_2022.bin.gz",
+     "date": "2022-03-19",
+     "scene": "LC09_L2SP_138044_20220319_02_T1",
+     "clear": 0.999,
+     "n": 185756,
+     "ndvi_mean": 0.495,
+     "lst_mean": 33.924,
+     "slope": -9.201,
+     "intercept": 38.479,
+     "r": -0.5974
+    },
+    "2023": {
+     "file": "grid/Khulna_2023.bin.gz",
+     "date": "2023-04-08",
+     "scene": "LC08_L2SP_137044_20230408_02_T1",
+     "clear": 0.999,
+     "n": 190968,
+     "ndvi_mean": 0.5231,
+     "lst_mean": 35.371,
+     "slope": -7.96,
+     "intercept": 39.535,
+     "r": -0.4965
+    },
+    "2024": {
+     "file": "grid/Khulna_2024.bin.gz",
+     "date": "2024-04-01",
+     "scene": "LC08_L2SP_138044_20240401_02_T1",
+     "clear": 0.995,
+     "n": 188063,
+     "ndvi_mean": 0.5199,
+     "lst_mean": 36.548,
+     "slope": -6.786,
+     "intercept": 40.076,
+     "r": -0.4553
+    },
+    "2025": {
+     "file": "grid/Khulna_2025.bin.gz",
+     "date": "2025-03-27",
+     "scene": "LC09_L2SP_138044_20250327_02_T1",
+     "clear": 0.999,
+     "n": 184753,
+     "ndvi_mean": 0.513,
+     "lst_mean": 34.478,
+     "slope": -8.622,
+     "intercept": 38.901,
+     "r": -0.6333
+    }
+   }
+  },
+  "Rajshahi": {
+   "lon": 88.6,
+   "lat": 24.37,
+   "width": 406,
+   "height": 446,
+   "bounds": [
+    [
+     24.310000000000002,
+     88.53999999999999
+    ],
+    [
+     24.430194461534715,
+     88.6601172699447
+    ]
+   ],
+   "merc": [
+    9856227.714836441,
+    2791228.7151705544,
+    9869599.108162165,
+    2805917.487149058
+   ],
+   "median_slope": -15.585,
+   "median_r": -0.708,
+   "years": {
+    "2014": {
+     "file": "grid/Rajshahi_2014.bin.gz",
+     "date": "2014-04-22",
+     "scene": "LC08_L2SP_138043_20140422_02_T1",
+     "clear": 1.0,
+     "n": 166959,
+     "ndvi_mean": 0.3569,
+     "lst_mean": 45.631,
+     "slope": -21.21,
+     "intercept": 53.2,
+     "r": -0.7852
+    },
+    "2015": {
+     "file": "grid/Rajshahi_2015.bin.gz",
+     "date": "2015-03-24",
+     "scene": "LC08_L2SP_138043_20150324_02_T1",
+     "clear": 0.999,
+     "n": 169025,
+     "ndvi_mean": 0.3328,
+     "lst_mean": 39.644,
+     "slope": -20.223,
+     "intercept": 46.373,
+     "r": -0.756
+    },
+    "2016": {
+     "file": "grid/Rajshahi_2016.bin.gz",
+     "date": "2016-04-11",
+     "scene": "LC08_L2SP_138043_20160411_02_T1",
+     "clear": 1.0,
+     "n": 171787,
+     "ndvi_mean": 0.3895,
+     "lst_mean": 40.697,
+     "slope": -11.798,
+     "intercept": 45.292,
+     "r": -0.6212
+    },
+    "2017": {
+     "file": "grid/Rajshahi_2017.bin.gz",
+     "date": "2017-04-14",
+     "scene": "LC08_L2SP_138043_20170414_02_T1",
+     "clear": 1.0,
+     "n": 170247,
+     "ndvi_mean": 0.3403,
+     "lst_mean": 42.032,
+     "slope": -19.267,
+     "intercept": 48.589,
+     "r": -0.7065
+    },
+    "2018": {
+     "file": "grid/Rajshahi_2018.bin.gz",
+     "date": "2018-04-01",
+     "scene": "LC08_L2SP_138043_20180401_02_T1",
+     "clear": 1.0,
+     "n": 171626,
+     "ndvi_mean": 0.3741,
+     "lst_mean": 38.286,
+     "slope": -11.347,
+     "intercept": 42.531,
+     "r": -0.6564
+    },
+    "2019": {
+     "file": "grid/Rajshahi_2019.bin.gz",
+     "date": "2019-03-19",
+     "scene": "LC08_L2SP_138043_20190319_02_T1",
+     "clear": 0.982,
+     "n": 170064,
+     "ndvi_mean": 0.3706,
+     "lst_mean": 36.697,
+     "slope": -14.839,
+     "intercept": 42.197,
+     "r": -0.7373
+    },
+    "2020": {
+     "file": "grid/Rajshahi_2020.bin.gz",
+     "date": "2020-04-06",
+     "scene": "LC08_L2SP_138043_20200406_02_T1",
+     "clear": 1.0,
+     "n": 165304,
+     "ndvi_mean": 0.3578,
+     "lst_mean": 43.312,
+     "slope": -16.332,
+     "intercept": 49.155,
+     "r": -0.6998
+    },
+    "2021": {
+     "file": "grid/Rajshahi_2021.bin.gz",
+     "date": "2021-04-25",
+     "scene": "LC08_L2SP_138043_20210425_02_T1",
+     "clear": 1.0,
+     "n": 169887,
+     "ndvi_mean": 0.3441,
+     "lst_mean": 41.692,
+     "slope": -13.737,
+     "intercept": 46.418,
+     "r": -0.7294
+    },
+    "2022": {
+     "file": "grid/Rajshahi_2022.bin.gz",
+     "date": "2022-03-19",
+     "scene": "LC09_L2SP_138043_20220319_02_T1",
+     "clear": 1.0,
+     "n": 169377,
+     "ndvi_mean": 0.365,
+     "lst_mean": 40.068,
+     "slope": -16.412,
+     "intercept": 46.058,
+     "r": -0.7088
+    },
+    "2023": {
+     "file": "grid/Rajshahi_2023.bin.gz",
+     "date": "2023-03-06",
+     "scene": "LC09_L2SP_138043_20230306_02_T1",
+     "clear": 0.982,
+     "n": 164738,
+     "ndvi_mean": 0.3642,
+     "lst_mean": 35.175,
+     "slope": -13.169,
+     "intercept": 39.972,
+     "r": -0.6608
+    },
+    "2024": {
+     "file": "grid/Rajshahi_2024.bin.gz",
+     "date": "2024-04-01",
+     "scene": "LC08_L2SP_138043_20240401_02_T1",
+     "clear": 1.0,
+     "n": 170455,
+     "ndvi_mean": 0.4105,
+     "lst_mean": 39.83,
+     "slope": -10.719,
+     "intercept": 44.23,
+     "r": -0.634
+    },
+    "2025": {
+     "file": "grid/Rajshahi_2025.bin.gz",
+     "date": "2025-03-27",
+     "scene": "LC09_L2SP_138043_20250327_02_T1",
+     "clear": 1.0,
+     "n": 173830,
+     "ndvi_mean": 0.3503,
+     "lst_mean": 36.888,
+     "slope": -18.473,
+     "intercept": 43.36,
+     "r": -0.7202
+    }
+   }
+  },
+  "Sylhet": {
+   "lon": 91.87,
+   "lat": 24.895,
+   "width": 404,
+   "height": 446,
+   "bounds": [
+    [
+     24.834999999999994,
+     91.81
+    ],
+    [
+     24.95519445882583,
+     91.93002879794102
+    ]
+   ],
+   "merc": [
+    10220242.449730447,
+    2855491.6596372286,
+    10233603.99439777,
+    2870242.275779869
+   ],
+   "median_slope": -8.79,
+   "median_r": -0.644,
+   "years": {
+    "2014": {
+     "file": "grid/Sylhet_2014.bin.gz",
+     "date": "2014-04-24",
+     "scene": "LC08_L2SP_136043_20140424_02_T1",
+     "clear": 1.0,
+     "n": 182700,
+     "ndvi_mean": 0.5243,
+     "lst_mean": 36.265,
+     "slope": -8.79,
+     "intercept": 40.874,
+     "r": -0.5822
+    },
+    "2015": {
+     "file": "grid/Sylhet_2015.bin.gz",
+     "date": "2015-03-26",
+     "scene": "LC08_L2SP_136043_20150326_02_T1",
+     "clear": 0.922,
+     "n": 168566,
+     "ndvi_mean": 0.4849,
+     "lst_mean": 34.364,
+     "slope": -15.144,
+     "intercept": 41.707,
+     "r": -0.7154
+    },
+    "2017": {
+     "file": "grid/Sylhet_2017.bin.gz",
+     "date": "2017-03-15",
+     "scene": "LC08_L2SP_136043_20170315_02_T1",
+     "clear": 1.0,
+     "n": 180980,
+     "ndvi_mean": 0.5886,
+     "lst_mean": 29.37,
+     "slope": -6.804,
+     "intercept": 33.375,
+     "r": -0.643
+    },
+    "2018": {
+     "file": "grid/Sylhet_2018.bin.gz",
+     "date": "2018-03-18",
+     "scene": "LC08_L2SP_136043_20180318_02_T1",
+     "clear": 0.891,
+     "n": 162968,
+     "ndvi_mean": 0.5496,
+     "lst_mean": 26.655,
+     "slope": -2.197,
+     "intercept": 27.862,
+     "r": -0.1527
+    },
+    "2019": {
+     "file": "grid/Sylhet_2019.bin.gz",
+     "date": "2019-05-08",
+     "scene": "LC08_L2SP_136043_20190508_02_T1",
+     "clear": 0.619,
+     "n": 113078,
+     "ndvi_mean": 0.5834,
+     "lst_mean": 32.715,
+     "slope": -1.884,
+     "intercept": 33.814,
+     "r": -0.1658
+    },
+    "2020": {
+     "file": "grid/Sylhet_2020.bin.gz",
+     "date": "2020-03-23",
+     "scene": "LC08_L2SP_136043_20200323_02_T1",
+     "clear": 0.592,
+     "n": 108172,
+     "ndvi_mean": 0.5744,
+     "lst_mean": 31.448,
+     "slope": -10.066,
+     "intercept": 37.229,
+     "r": -0.56
+    },
+    "2021": {
+     "file": "grid/Sylhet_2021.bin.gz",
+     "date": "2021-04-11",
+     "scene": "LC08_L2SP_136043_20210411_02_T1",
+     "clear": 0.951,
+     "n": 173862,
+     "ndvi_mean": 0.5613,
+     "lst_mean": 30.604,
+     "slope": -12.707,
+     "intercept": 37.737,
+     "r": -0.698
+    },
+    "2022": {
+     "file": "grid/Sylhet_2022.bin.gz",
+     "date": "2022-03-21",
+     "scene": "LC09_L2SP_136043_20220321_02_T1",
+     "clear": 1.0,
+     "n": 182601,
+     "ndvi_mean": 0.5162,
+     "lst_mean": 35.674,
+     "slope": -12.173,
+     "intercept": 41.958,
+     "r": -0.7062
+    },
+    "2023": {
+     "file": "grid/Sylhet_2023.bin.gz",
+     "date": "2023-04-09",
+     "scene": "LC09_L2SP_136043_20230409_02_T1",
+     "clear": 1.0,
+     "n": 181123,
+     "ndvi_mean": 0.6083,
+     "lst_mean": 33.898,
+     "slope": -10.339,
+     "intercept": 40.187,
+     "r": -0.6648
+    },
+    "2024": {
+     "file": "grid/Sylhet_2024.bin.gz",
+     "date": "2024-03-10",
+     "scene": "LC09_L2SP_136043_20240310_02_T1",
+     "clear": 1.0,
+     "n": 181441,
+     "ndvi_mean": 0.5502,
+     "lst_mean": 30.536,
+     "slope": -8.388,
+     "intercept": 35.152,
+     "r": -0.6567
+    },
+    "2025": {
+     "file": "grid/Sylhet_2025.bin.gz",
+     "date": "2025-03-05",
+     "scene": "LC08_L2SP_136043_20250305_02_T1",
+     "clear": 0.997,
+     "n": 182365,
+     "ndvi_mean": 0.4901,
+     "lst_mean": 29.154,
+     "slope": -7.728,
+     "intercept": 32.941,
+     "r": -0.6441
+    }
+   }
+  },
+  "Barishal": {
+   "lon": 90.355,
+   "lat": 22.705,
+   "width": 411,
+   "height": 446,
+   "bounds": [
+    [
+     22.645000000000003,
+     90.29499999999999
+    ],
+    [
+     22.76519446991189,
+     90.4150669323818
+    ]
+   ],
+   "merc": [
+    10051593.421178637,
+    2589143.475013412,
+    10064959.21095249,
+    2603647.4707290772
+   ],
+   "median_slope": -10.098,
+   "median_r": -0.674,
+   "years": {
+    "2014": {
+     "file": "grid/Barishal_2014.bin.gz",
+     "date": "2014-03-30",
+     "scene": "LC08_L2SP_137044_20140330_02_T1",
+     "clear": 1.0,
+     "n": 176561,
+     "ndvi_mean": 0.617,
+     "lst_mean": 37.231,
+     "slope": -10.027,
+     "intercept": 43.417,
+     "r": -0.681
+    },
+    "2015": {
+     "file": "grid/Barishal_2015.bin.gz",
+     "date": "2015-03-17",
+     "scene": "LC08_L2SP_137044_20150317_02_T1",
+     "clear": 1.0,
+     "n": 176263,
+     "ndvi_mean": 0.5889,
+     "lst_mean": 33.594,
+     "slope": -10.011,
+     "intercept": 39.489,
+     "r": -0.6523
+    },
+    "2016": {
+     "file": "grid/Barishal_2016.bin.gz",
+     "date": "2016-03-03",
+     "scene": "LC08_L2SP_137044_20160303_02_T1",
+     "clear": 0.841,
+     "n": 150901,
+     "ndvi_mean": 0.6015,
+     "lst_mean": 30.787,
+     "slope": -5.688,
+     "intercept": 34.208,
+     "r": -0.5312
+    },
+    "2017": {
+     "file": "grid/Barishal_2017.bin.gz",
+     "date": "2017-03-22",
+     "scene": "LC08_L2SP_137044_20170322_02_T1",
+     "clear": 1.0,
+     "n": 176557,
+     "ndvi_mean": 0.6221,
+     "lst_mean": 30.292,
+     "slope": -7.943,
+     "intercept": 35.234,
+     "r": -0.6633
+    },
+    "2018": {
+     "file": "grid/Barishal_2018.bin.gz",
+     "date": "2018-04-10",
+     "scene": "LC08_L2SP_137044_20180410_02_T1",
+     "clear": 0.906,
+     "n": 161072,
+     "ndvi_mean": 0.6466,
+     "lst_mean": 36.293,
+     "slope": -8.862,
+     "intercept": 42.024,
+     "r": -0.5792
+    },
+    "2019": {
+     "file": "grid/Barishal_2019.bin.gz",
+     "date": "2019-03-28",
+     "scene": "LC08_L2SP_137044_20190328_02_T1",
+     "clear": 1.0,
+     "n": 175248,
+     "ndvi_mean": 0.619,
+     "lst_mean": 34.287,
+     "slope": -10.17,
+     "intercept": 40.583,
+     "r": -0.6665
+    },
+    "2020": {
+     "file": "grid/Barishal_2020.bin.gz",
+     "date": "2020-03-30",
+     "scene": "LC08_L2SP_137044_20200330_02_T1",
+     "clear": 1.0,
+     "n": 175295,
+     "ndvi_mean": 0.6315,
+     "lst_mean": 35.309,
+     "slope": -10.338,
+     "intercept": 41.838,
+     "r": -0.6933
+    },
+    "2021": {
+     "file": "grid/Barishal_2021.bin.gz",
+     "date": "2021-03-17",
+     "scene": "LC08_L2SP_137044_20210317_02_T1",
+     "clear": 0.999,
+     "n": 176242,
+     "ndvi_mean": 0.5613,
+     "lst_mean": 33.564,
+     "slope": -10.522,
+     "intercept": 39.47,
+     "r": -0.6776
+    },
+    "2022": {
+     "file": "grid/Barishal_2022.bin.gz",
+     "date": "2022-03-20",
+     "scene": "LC08_L2SP_137044_20220320_02_T1",
+     "clear": 1.0,
+     "n": 175107,
+     "ndvi_mean": 0.599,
+     "lst_mean": 34.199,
+     "slope": -11.06,
+     "intercept": 40.823,
+     "r": -0.7214
+    },
+    "2023": {
+     "file": "grid/Barishal_2023.bin.gz",
+     "date": "2023-04-08",
+     "scene": "LC08_L2SP_137044_20230408_02_T1",
+     "clear": 1.0,
+     "n": 176203,
+     "ndvi_mean": 0.6455,
+     "lst_mean": 34.637,
+     "slope": -10.431,
+     "intercept": 41.371,
+     "r": -0.7037
+    },
+    "2024": {
+     "file": "grid/Barishal_2024.bin.gz",
+     "date": "2024-04-26",
+     "scene": "LC08_L2SP_137044_20240426_02_T1",
+     "clear": 1.0,
+     "n": 176141,
+     "ndvi_mean": 0.6363,
+     "lst_mean": 36.153,
+     "slope": -9.821,
+     "intercept": 42.401,
+     "r": -0.6696
+    },
+    "2025": {
+     "file": "grid/Barishal_2025.bin.gz",
+     "date": "2025-03-28",
+     "scene": "LC08_L2SP_137044_20250328_02_T1",
+     "clear": 1.0,
+     "n": 176861,
+     "ndvi_mean": 0.6111,
+     "lst_mean": 33.905,
+     "slope": -10.37,
+     "intercept": 40.241,
+     "r": -0.7018
+    }
+   }
+  },
+  "Rangpur": {
+   "lon": 89.25,
+   "lat": 25.745,
+   "width": 402,
+   "height": 446,
+   "bounds": [
+    [
+     25.68499999999999,
+     89.19
+    ],
+    [
+     25.805194454367363,
+     89.31027586930757
+    ]
+   ],
+   "merc": [
+    9928585.38385207,
+    2960118.8627834297,
+    9941974.432378108,
+    2974973.379307342
+   ],
+   "median_slope": -9.748,
+   "median_r": -0.709,
+   "years": {
+    "2014": {
+     "file": "grid/Rangpur_2014.bin.gz",
+     "date": "2014-04-22",
+     "scene": "LC08_L2SP_138042_20140422_02_T1",
+     "clear": 1.0,
+     "n": 184863,
+     "ndvi_mean": 0.5931,
+     "lst_mean": 36.125,
+     "slope": -15.511,
+     "intercept": 45.325,
+     "r": -0.757
+    },
+    "2015": {
+     "file": "grid/Rangpur_2015.bin.gz",
+     "date": "2015-04-09",
+     "scene": "LC08_L2SP_138042_20150409_02_T1",
+     "clear": 1.0,
+     "n": 184905,
+     "ndvi_mean": 0.6129,
+     "lst_mean": 34.108,
+     "slope": -10.534,
+     "intercept": 40.565,
+     "r": -0.7029
+    },
+    "2016": {
+     "file": "grid/Rangpur_2016.bin.gz",
+     "date": "2016-04-11",
+     "scene": "LC08_L2SP_138042_20160411_02_T1",
+     "clear": 1.0,
+     "n": 184903,
+     "ndvi_mean": 0.6003,
+     "lst_mean": 34.35,
+     "slope": -8.661,
+     "intercept": 39.549,
+     "r": -0.7135
+    },
+    "2017": {
+     "file": "grid/Rangpur_2017.bin.gz",
+     "date": "2017-03-13",
+     "scene": "LC08_L2SP_138042_20170313_02_T1",
+     "clear": 1.0,
+     "n": 184559,
+     "ndvi_mean": 0.502,
+     "lst_mean": 27.044,
+     "slope": -2.867,
+     "intercept": 28.483,
+     "r": -0.387
+    },
+    "2018": {
+     "file": "grid/Rangpur_2018.bin.gz",
+     "date": "2018-04-01",
+     "scene": "LC08_L2SP_138042_20180401_02_T1",
+     "clear": 1.0,
+     "n": 184910,
+     "ndvi_mean": 0.5675,
+     "lst_mean": 30.37,
+     "slope": -6.899,
+     "intercept": 34.285,
+     "r": -0.5415
+    },
+    "2019": {
+     "file": "grid/Rangpur_2019.bin.gz",
+     "date": "2019-04-20",
+     "scene": "LC08_L2SP_138042_20190420_02_T1",
+     "clear": 0.973,
+     "n": 179962,
+     "ndvi_mean": 0.638,
+     "lst_mean": 32.335,
+     "slope": -13.513,
+     "intercept": 40.956,
+     "r": -0.7162
+    },
+    "2020": {
+     "file": "grid/Rangpur_2020.bin.gz",
+     "date": "2020-04-06",
+     "scene": "LC08_L2SP_138042_20200406_02_T1",
+     "clear": 1.0,
+     "n": 184825,
+     "ndvi_mean": 0.5345,
+     "lst_mean": 33.603,
+     "slope": -8.961,
+     "intercept": 38.393,
+     "r": -0.6702
+    },
+    "2021": {
+     "file": "grid/Rangpur_2021.bin.gz",
+     "date": "2021-04-25",
+     "scene": "LC08_L2SP_138042_20210425_02_T1",
+     "clear": 1.0,
+     "n": 184910,
+     "ndvi_mean": 0.587,
+     "lst_mean": 33.427,
+     "slope": -11.179,
+     "intercept": 39.989,
+     "r": -0.7248
+    },
+    "2022": {
+     "file": "grid/Rangpur_2022.bin.gz",
+     "date": "2022-03-19",
+     "scene": "LC09_L2SP_138042_20220319_02_T1",
+     "clear": 1.0,
+     "n": 184878,
+     "ndvi_mean": 0.4709,
+     "lst_mean": 36.543,
+     "slope": -11.613,
+     "intercept": 42.011,
+     "r": -0.7197
+    },
+    "2023": {
+     "file": "grid/Rangpur_2023.bin.gz",
+     "date": "2023-04-07",
+     "scene": "LC09_L2SP_138042_20230407_02_T1",
+     "clear": 1.0,
+     "n": 184828,
+     "ndvi_mean": 0.6073,
+     "lst_mean": 32.379,
+     "slope": -8.467,
+     "intercept": 37.521,
+     "r": -0.705
+    },
+    "2024": {
+     "file": "grid/Rangpur_2024.bin.gz",
+     "date": "2024-04-25",
+     "scene": "LC09_L2SP_138042_20240425_02_T1",
+     "clear": 1.0,
+     "n": 184834,
+     "ndvi_mean": 0.6242,
+     "lst_mean": 35.751,
+     "slope": -14.849,
+     "intercept": 45.02,
+     "r": -0.7669
+    },
+    "2025": {
+     "file": "grid/Rangpur_2025.bin.gz",
+     "date": "2025-03-19",
+     "scene": "LC08_L2SP_138042_20250319_02_T1",
+     "clear": 1.0,
+     "n": 184449,
+     "ndvi_mean": 0.4529,
+     "lst_mean": 33.286,
+     "slope": -6.983,
+     "intercept": 36.448,
+     "r": -0.514
+    }
+   }
+  },
+  "Mymensingh": {
+   "lon": 90.405,
+   "lat": 24.75,
+   "width": 405,
+   "height": 446,
+   "bounds": [
+    [
+     24.68999999999999,
+     90.34499999999998
+    ],
+    [
+     24.810194459577353,
+     90.46518513177917
+    ]
+   ],
+   "merc": [
+    10057159.3957183,
+    2837715.8763153064,
+    10070538.34338888,
+    2852449.2359722904
+   ],
+   "median_slope": -11.471,
+   "median_r": -0.744,
+   "years": {
+    "2014": {
+     "file": "grid/Mymensingh_2014.bin.gz",
+     "date": "2014-03-30",
+     "scene": "LC08_L2SP_137043_20140330_02_T1",
+     "clear": 1.0,
+     "n": 187111,
+     "ndvi_mean": 0.6403,
+     "lst_mean": 33.013,
+     "slope": -12.019,
+     "intercept": 40.708,
+     "r": -0.7473
+    },
+    "2015": {
+     "file": "grid/Mymensingh_2015.bin.gz",
+     "date": "2015-03-17",
+     "scene": "LC08_L2SP_137043_20150317_02_T1",
+     "clear": 1.0,
+     "n": 186219,
+     "ndvi_mean": 0.6424,
+     "lst_mean": 31.981,
+     "slope": -11.37,
+     "intercept": 39.286,
+     "r": -0.7294
+    },
+    "2016": {
+     "file": "grid/Mymensingh_2016.bin.gz",
+     "date": "2016-03-03",
+     "scene": "LC08_L2SP_137043_20160303_02_T1",
+     "clear": 1.0,
+     "n": 187128,
+     "ndvi_mean": 0.5736,
+     "lst_mean": 28.49,
+     "slope": -9.094,
+     "intercept": 33.707,
+     "r": -0.6811
+    },
+    "2017": {
+     "file": "grid/Mymensingh_2017.bin.gz",
+     "date": "2017-03-22",
+     "scene": "LC08_L2SP_137043_20170322_02_T1",
+     "clear": 1.0,
+     "n": 187128,
+     "ndvi_mean": 0.6094,
+     "lst_mean": 26.11,
+     "slope": -8.643,
+     "intercept": 31.377,
+     "r": -0.7417
+    },
+    "2018": {
+     "file": "grid/Mymensingh_2018.bin.gz",
+     "date": "2018-03-25",
+     "scene": "LC08_L2SP_137043_20180325_02_T1",
+     "clear": 0.998,
+     "n": 186788,
+     "ndvi_mean": 0.604,
+     "lst_mean": 32.485,
+     "slope": -13.212,
+     "intercept": 40.465,
+     "r": -0.788
+    },
+    "2019": {
+     "file": "grid/Mymensingh_2019.bin.gz",
+     "date": "2019-03-28",
+     "scene": "LC08_L2SP_137043_20190328_02_T1",
+     "clear": 0.904,
+     "n": 169071,
+     "ndvi_mean": 0.626,
+     "lst_mean": 31.373,
+     "slope": -16.594,
+     "intercept": 41.762,
+     "r": -0.7901
+    },
+    "2020": {
+     "file": "grid/Mymensingh_2020.bin.gz",
+     "date": "2020-03-30",
+     "scene": "LC08_L2SP_137043_20200330_02_T1",
+     "clear": 1.0,
+     "n": 184971,
+     "ndvi_mean": 0.6223,
+     "lst_mean": 33.958,
+     "slope": -12.966,
+     "intercept": 42.027,
+     "r": -0.7303
+    },
+    "2021": {
+     "file": "grid/Mymensingh_2021.bin.gz",
+     "date": "2021-03-17",
+     "scene": "LC08_L2SP_137043_20210317_02_T1",
+     "clear": 0.997,
+     "n": 186566,
+     "ndvi_mean": 0.5588,
+     "lst_mean": 30.761,
+     "slope": -11.572,
+     "intercept": 37.227,
+     "r": -0.753
+    },
+    "2022": {
+     "file": "grid/Mymensingh_2022.bin.gz",
+     "date": "2022-03-20",
+     "scene": "LC08_L2SP_137043_20220320_02_T1",
+     "clear": 1.0,
+     "n": 186789,
+     "ndvi_mean": 0.5758,
+     "lst_mean": 33.372,
+     "slope": -13.836,
+     "intercept": 41.339,
+     "r": -0.7635
+    },
+    "2023": {
+     "file": "grid/Mymensingh_2023.bin.gz",
+     "date": "2023-04-08",
+     "scene": "LC08_L2SP_137043_20230408_02_T1",
+     "clear": 1.0,
+     "n": 186542,
+     "ndvi_mean": 0.6254,
+     "lst_mean": 33.121,
+     "slope": -11.074,
+     "intercept": 40.046,
+     "r": -0.717
+    },
+    "2024": {
+     "file": "grid/Mymensingh_2024.bin.gz",
+     "date": "2024-03-17",
+     "scene": "LC09_L2SP_137043_20240317_02_T1",
+     "clear": 0.999,
+     "n": 186319,
+     "ndvi_mean": 0.5973,
+     "lst_mean": 31.596,
+     "slope": -11.122,
+     "intercept": 38.239,
+     "r": -0.7182
+    },
+    "2025": {
+     "file": "grid/Mymensingh_2025.bin.gz",
+     "date": "2025-03-28",
+     "scene": "LC08_L2SP_137043_20250328_02_T1",
+     "clear": 0.972,
+     "n": 181836,
+     "ndvi_mean": 0.5795,
+     "lst_mean": 31.681,
+     "slope": -11.158,
+     "intercept": 38.147,
+     "r": -0.7784
+    }
+   }
+  }
+ }
+}
